@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cb17f57a.css",
+    "main.js": "/static/js/main.76cc087b.js",
+    "static/media/adventure.jpg": "/static/media/adventure.3c363196be47cbb7c534.jpg",
+    "static/media/spiderman2.png": "/static/media/spiderman2.010b171fd093d22da325.png",
+    "static/media/weather.png": "/static/media/weather.dbf306b0995bff2872bb.png",
+    "static/media/subway.jpg": "/static/media/subway.8feb2a2f7ea7019980cd.jpg",
+    "static/media/bmi.png": "/static/media/bmi.3c893440a2dd7f4206c3.png",
+    "static/media/spiderman.jpg": "/static/media/spiderman.eae9ee10678c1c66b518.jpg",
+    "index.html": "/index.html",
+    "main.cb17f57a.css.map": "/static/css/main.cb17f57a.css.map",
+    "main.76cc087b.js.map": "/static/js/main.76cc087b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb17f57a.css",
+    "static/js/main.76cc087b.js"
+  ]
+}

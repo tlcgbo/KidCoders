@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import './index.css'
+import React from "react"
+import { Route, Routes } from 'react-router-dom'; 
+import Home from "./routes/Home"
+import About from "./routes/About"
+import Authentification from "./routes/Authentification"
+import Error from "./routes/Error"
+import Contact from "./routes/Contact"
+import Project from "./routes/Project"
+import PrivateRoutesLayout from './Layouts/PrivateRoutesLayout';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    < >
+      <Routes>
+        {/* Public Page */}
+        <Route path = "/" element = {<Home />} />
+        <Route path = '/About' element = {<About />} />
+        <Route path = '/Signup' element = {<Authentification />} />
+        <Route path = "/Error" element = {<Error />} />
+        <Route path = '/Contact' element = {<Contact />} />
+
+        {/* Private Page */}
+        <Route element={<PrivateRoutesLayout />} >
+          <Route path = '/Project' element = {<Project />} />
+        </Route>
+      </Routes>
+        
+    </>
   );
 }
 
